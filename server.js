@@ -14,7 +14,8 @@ const distPath = path.join(__dirname, "dist");
 app.use(express.static(distPath));
 
 // SPA fallback (so /about, /dashboard, etc. work)
-app.get("*", (req, res) => {
+// IMPORTANT: use a regex instead of "*" to avoid path-to-regexp errors
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(distPath, "index.html"));
 });
 
