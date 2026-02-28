@@ -1,0 +1,87 @@
+.upload-photo {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1a1a2e;
+  text-align: left;
+}
+
+.upload-photo h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border: 2px dashed #555;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.file-label:hover {
+  border-color: #888;
+}
+
+.file-label input[type='file'] {
+  width: 100%;
+}
+
+.preview {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 240px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.upload-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.reset-btn {
+  background: #444;
+}
+
+.upload-status {
+  text-align: center;
+  color: #f87171;
+  margin: 0.5rem 0;
+}
+
+.upload-status.success {
+  color: #4ade80;
+}
+
+.upload-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #0f0f1a;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.upload-result p {
+  margin: 0.3rem 0;
+}
+
+.upload-result a {
+  color: #60a5fa;
+}
