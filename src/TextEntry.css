@@ -1,0 +1,134 @@
+.text-entry {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1a1a2e;
+  text-align: left;
+}
+
+.text-entry h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.entry-textarea {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #0f0f1a;
+  color: #eee;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.entry-textarea:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.voice-btn {
+  font-size: 1.4rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #0f0f1a;
+  cursor: pointer;
+  transition: background 0.2s;
+  line-height: 1;
+}
+
+.voice-btn.active {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.submit-btn {
+  align-self: flex-end;
+}
+
+.entries-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.entry-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #0f0f1a;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.entry-text {
+  flex: 1;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.entry-meta {
+  font-size: 0.75rem;
+  color: #888;
+  white-space: nowrap;
+  padding-top: 0.1rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #f87171;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: #3b1a1a;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #888;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
